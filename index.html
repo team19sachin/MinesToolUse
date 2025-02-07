@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="ifkBsq7T1gqvK28xEjsyun09QGPQWRUoYg-oOF4LHjU" />
+    <title>MINES TOOL VIDEO TUTORIAL</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000000;
+            color: #fdf8f8;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            padding: 30px;
+            max-width: 100%;
+            width: 100%;
+            margin: 0 auto;
+            background: #0f0f0f;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgb(220, 235, 3);
+            box-sizing: border-box;
+        }
+        .apk-header {
+            margin-bottom: 30px;
+        }
+        .apk-logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgb(220, 235, 3);
+            box-shadow: 0 0 20px rgb(220, 235, 3);
+        }
+        .apk-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: rgb(220, 235, 3);
+            text-shadow: 0 0 15px rgb(220, 235, 3), 0 0 30px rgb(220, 235, 3), 0 0 50px rgb(220, 235, 3);
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            0% { text-shadow: 0 0 15px rgb(220, 235, 3); }
+            100% { text-shadow: 0 0 30px rgb(220, 235, 3); }
+        }
+        .download-btn, .how-to-btn {
+            background: linear-gradient(45deg, rgb(220, 235, 3), rgb(220, 235, 3));
+            padding: 12px 24px;
+            font-size: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: rgb(18, 18, 18);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block;
+            margin: 15px 0;
+            cursor: pointer;
+        }
+        .download-btn:hover, .how-to-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgb(220, 235, 3);
+        }
+        .slider-container {
+            display: flex;
+            gap: 10px;
+            padding: 15px 0;
+            overflow-x: auto;
+            scrollbar-width: none;
+            justify-content: center;
+        }
+        .slider-container::-webkit-scrollbar {
+            display: none;
+        }
+        .slider-container img {
+            width: 120px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(220, 235, 3);
+            transition: transform 0.3s;
+            flex-shrink: 0;
+        }
+        .slider-container img:hover {
+            transform: scale(1.05);
+        }
+        .video-container {
+            margin: 20px 0;
+            position: relative;
+        }
+        .video-container video {
+            width: 100%;
+            max-width: 650px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgb(220, 235, 3);
+        }
+        .description p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #f9f7f7d5;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .apk-name {
+                font-size: 2rem;
+            }
+            .best-platform-btn, .how-to-btn {
+                font-size: 18px;
+                padding: 10px 20px;
+            }
+            .apk-logo {
+                width: 120px;
+                height: 120px;
+            }
+            .slider-container {
+                gap: 5px;
+            }
+            .slider-container img {
+                width: 100px;
+            }
+        }
+        @media (max-width: 480px) {
+            .apk-name {
+                font-size: 1.5rem;
+            }
+            .download-btn, .how-to-btn {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+            .apk-logo {
+                width: 100px;
+                height: 100px;
+            }
+            .slider-container img {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="apk-header">
+            <img src="logo.png" alt="APK Logo" class="apk-logo">
+            <div class="apk-name">HOW TO USE MINES TOOL</div>
+        </div>
+        <a href="https://mastershack.github.io/PaidHackz/" class="download-btn" download><b>MINES TOOL</b></a>
+
+        
+        <!-- Video Section -->
+        <div class="video-container">
+            <video id="howToUseVideo" controls>
+                <source src="MinesToolUse.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+    
+    <footer>
+        <p>&copy; TEAM19SACHIN | All rights reserved</p>
+    </footer>
+</body>
+</html>
